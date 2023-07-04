@@ -1,0 +1,152 @@
+{
+    "success": true,
+    "data": [
+        {
+            "userName": "Роман",
+            "lastMessage": "Привет, ты подготовился к буткемпу?",
+            "date": 1675169940000,
+            "userAvatar": "1.jpg",
+            "countUnreadMessages": 1
+        },
+        {
+            "userName": "Елена",
+            "lastMessage": "Слушай, а где ты flutter учишь?",
+            "date": 1675156380000,
+            "userAvatar": null,
+            "countUnreadMessages": 5
+        },
+        {
+            "userName": "Алексей",
+            "lastMessage": "Привет, есть планы на выходные?",
+            "date": 1675232280000,
+            "userAvatar": "2.jpg",
+            "countUnreadMessages": 11
+        },
+        {
+            "userName": "Катюша",
+            "lastMessage": null,
+            "date": null,
+            "userAvatar": "3.jpg",
+            "countUnreadMessages": 0
+        },
+        {
+            "userName": "Лиля",
+            "lastMessage": null,
+            "date": null,
+            "userAvatar": "4.jpg",
+            "countUnreadMessages": 0
+        },
+        {
+            "userName": "Валентин",
+            "lastMessage": "Слушай, а тебя Лёха никуда не звал?",
+            "date": 1675242840000,
+            "userAvatar": null,
+            "countUnreadMessages": 15
+        },
+        {
+            "userName": "Саша",
+            "lastMessage": null,
+            "date": null,
+            "userAvatar": "5.jpg",
+            "countUnreadMessages": 0
+        },
+        {
+            "userName": "Пётр",
+            "lastMessage": "Как думаешь, в каком году я Питер основал?",
+            "date": 1675249380000,
+            "userAvatar": "6.jpg",
+            "countUnreadMessages": 9
+        },
+        {
+            "userName": "Артём",
+            "lastMessage": "Нет, ну это война?",
+            "date": 1675257420000,
+            "userAvatar": "7.jpg",
+            "countUnreadMessages": 8
+        },
+        {
+            "userName": "Никита",
+            "lastMessage": "может на каньках покатаемся?",
+            "date": 1675310160000,
+            "userAvatar": "8.jpg",
+            "countUnreadMessages": 5
+        },
+        {
+            "userName": "Настя",
+            "lastMessage": "улыбнись, милашка",
+            "date": 1675310220000,
+            "userAvatar": null,
+            "countUnreadMessages": 7
+        },
+        {
+            "userName": "Инкогнито",
+            "lastMessage": "Не хочешь быстро заработать?",
+            "date": 1675325640000,
+            "userAvatar": "9.jpg",
+            "countUnreadMessages": 1
+        },
+        {
+            "userName": "Наташа",
+            "lastMessage": null,
+            "date": null,
+            "userAvatar": "10.jpg",
+            "countUnreadMessages": 0
+        },
+        {
+            "userName": "Серик",
+            "lastMessage": "А я думал мы друзья....",
+            "date": 1675316160000,
+            "userAvatar": "11.jpg",
+            "countUnreadMessages": 10
+        },
+        {
+            "userName": "Яна",
+            "lastMessage": "НУ И КУДА ТЫ ПРОПАДАЕШЬ???",
+            "date": 1675422540000,
+            "userAvatar": "12.jpg",
+            "countUnreadMessages": 11
+        },
+        {
+            "userName": "Таня",
+            "lastMessage": null,
+            "date": null,
+            "userAvatar": null,
+            "countUnreadMessages": 0
+        },
+        {
+            "userName": "Владимир Ильич",
+            "lastMessage": "Как говорится, жизнь полна неожиданностей - никогда не знаешь, что тебя ждет завтра!",
+            "date": 1675329240000,
+            "userAvatar": "16.jpg",
+            "countUnreadMessages": 3
+        },
+        {
+            "userName": "Любимая",
+            "lastMessage": "Дома поговорим",
+            "date": 1675334640000,
+            "userAvatar": "14.jpg",
+            "countUnreadMessages": 2
+        },
+        {
+            "userName": "Коржик",
+            "lastMessage": "Я купил котлеты)",
+            "date": 1675325250000,
+            "userAvatar": "13.jpg",
+            "countUnreadMessages": 0
+        },
+        {
+            "userName": "Не брать",
+            "lastMessage": "Порой жизнь бывает несправедлива",
+            "date": 1475325640000,
+            "userAvatar": null,
+            "countUnreadMessages": 4
+        },
+        {
+            "userName": "Mikka",
+            "lastMessage": "Почему программисты всегда говорят <Hello, World!>? Потому что они не знают, как поздороваться с реальными людьми. 😄",
+            "date": 1678125640000,
+            "userAvatar": "15.jpg",
+            "countUnreadMessages": 1
+        }
+    ]
+}
