@@ -4,6 +4,8 @@ import 'package:bootcamp_project/src/chats/models/chat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'dart:math';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final chats = await _loadChatList();
@@ -56,10 +58,9 @@ class MyApp extends StatelessWidget {
             ),
             body: ListView.builder(
               itemCount: chats.length,
-              itemBuilder: (BuildContext context, int index){
+              itemBuilder: (BuildContext context, int index) {
                 final chat = chats[index];
-                final String avatar =
-                    chat.userAvatar ?? 'assets/images/default_avatar.png';
+                final String avatar = chat.userAvatar ?? 'null';
                 final String lastMessage = chat.lastMessage ?? '';
                 final DateTime date = chat.date ?? DateTime.now();
                 final String dateString = _formatDate(date);
@@ -69,16 +70,36 @@ class MyApp extends StatelessWidget {
                   return Container();
                 } else {
                   return ListTile(
-                    leading: avatar.isNotEmpty
-                        ? CircleAvatar(backgroundImage: AssetImage(avatar))
-                        : CircleAvatar(child: Text(firstLetter)),
+                    leading: Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.primaries[
+                                Random().nextInt(Colors.primaries.length)],
+                            Colors.white,
+                          ],
+                          begin: Alignment.bottomLeft,
+                          end: Alignment.topRight,
+                        ),
+                      ),
+                      child: CircleAvatar(
+                        backgroundImage:
+                            avatar != 'null' ? AssetImage(avatar) : null,
+                        backgroundColor: Colors.transparent,
+                        child: avatar == 'null'
+                            ? Text(firstLetter,
+                                style: TextStyle(color: Colors.white))
+                            : null,
+                      ),
+                    ),
                     title: Text(chat.userName),
                     subtitle: Text(lastMessage),
                     trailing: Text(dateString),
                     onTap: () {
                       // Обработчик нажатия на элемент списка
-                  },
-                );
+                    },
+                  );
                 }
               },
             ),
@@ -90,7 +111,9 @@ class MyApp extends StatelessWidget {
 
   String _formatDate(DateTime date) {
     final now = DateTime.now();
-    if (date.year == now.year && date.month == now.month && date.day == now.day) {
+    if (date.year == now.year &&
+        date.month == now.month &&
+        date.day == now.day) {
       return '${date.hour.toString().padLeft(2, '0')}:${date.minute.toString().padLeft(2, '0')}';
     } else if (now.difference(date).inDays < 7) {
       switch (date.weekday) {
